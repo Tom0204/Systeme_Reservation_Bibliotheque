@@ -17,9 +17,9 @@ def main():
     manager = BibliothequeAvecFichier(biblio)
 
     try:
-        manager.sauvegarder("bib.json")
-        manager.export_csv("catalogue.csv")
-        manager.charger("bib.json")
+        manager.sauvegarder("data/bib.json")
+        manager.export_csv("data/catalogue.csv")
+        manager.charger("data/bib.json")
     except ErreurBibliotheque as e:
         print(f"Erreur gérée : {e}")
 
